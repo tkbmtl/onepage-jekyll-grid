@@ -1,0 +1,26 @@
+[
+    {
+        "name": "About us",
+        "link": "#about"
+    },
+    {
+        "name": "Our team",
+        "link": "#team"
+    },
+    {
+        "name": "Services",
+        "link": "#services"
+    },
+    {
+        "name": "Clients",
+        "link": "#clients"
+    },
+    {
+        "name": "Contact us",
+        "link": "#contact"
+    },
+    {
+        "name": "fr",
+        "link": "/"
+    }
+]
