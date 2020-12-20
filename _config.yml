@@ -1,3 +1,6 @@
 plugins:
-  - jekyll-autoprefixer
-  - jekyll-sitemap
+    - jekyll-autoprefixer
+    - jekyll-sitemap
+sass:
+    sass_dir: _scss
+    style: compressed

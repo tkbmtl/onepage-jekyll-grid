@@ -17,6 +17,7 @@ Thumbs.db
 _site
 /.idea
 /.vscode
+/.vscode/**
 secrets.json
 .jekyll-metadata
 .ruby-version
