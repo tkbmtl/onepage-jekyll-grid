@@ -1,15 +1,13 @@
 <!-- Navigation -->
 <header>
-<nav>
-
-    <a href="#page-top">LIFT73</a>
-    <ul>
-        {% assign lg = page.locale%}
-            {% for item in site.data.[lg].navigation%}
-                <li>
-                    <a href="{{ item.link }}">{{ item.name }}</a>
-                </li>
+    <nav>
+        <a href="#page-top">LIFT73</a>
+        <ul>
+            {% assign lg = page.locale%} {% for item in site.data.[lg].navigation%}
+            <li>
+                <a href="{{ item.link }}">{{ item.name }}</a>
+            </li>
             {% endfor %}
-    </ul>
-
+        </ul>
+    </nav>
 </header>
