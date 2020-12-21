@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 
+// Variables
+
+$header-color: lightblue;
+
 /* General STYLING */
 
 * {
@@ -12,4 +16,101 @@ body {
     font-family: "Lato", sans-serif;
     color: #333;
     line-height: 1.6;
+
+    a {
+        text-decoration: none;
+        color: #333;
+    }
+
+    h1,
+    h2 {
+        font-weight: 600;
+        line-height: 1.2;
+        margin: 10px 0;
+    }
+    p {
+        margin: 10px, 0;
+    }
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+// NAV BAR
+
+nav {
+    background-color: $header-color;
+    height: 75px;
+    padding: 0 40px;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+    }
+    .logo {
+        max-width: 200px;
+        height: auto;
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+    }
+
+    a {
+        color: rgb(128, 125, 125);
+        padding: 5px;
+        margin: 0 5px;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    .burger {
+        display: none;
+        div {
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+            margin: 5px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    nav {
+        .container {
+            flex-direction: column;
+        }
+
+        ul {
+            position: absolute;
+            right: 0px;
+            height: 90vh;
+            top: 75px;
+            background-color: $header-color;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+            justify-content: space-around;
+            transform: translateX(100%);
+
+            li {
+                opacity: 0%;
+            }
+        }
+        .burger {
+        }
+    }
 }
