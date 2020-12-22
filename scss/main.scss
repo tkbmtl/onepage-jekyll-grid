@@ -2,7 +2,7 @@
 
 // Variables
 
-$header-color: lightblue;
+$header-color: #09192f;
 
 /* General STYLING */
 
@@ -14,7 +14,7 @@ $header-color: lightblue;
 
 body {
     font-family: "Lato", sans-serif;
-    color: #333;
+    color: #000;
     line-height: 1.6;
 
     a {
@@ -41,93 +41,4 @@ body {
 }
 
 // NAV BAR
-
-nav {
-    background-color: $header-color;
-    height: 75px;
-
-    .container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        height: 100%;
-    }
-    .logo {
-        max-width: 175px;
-        height: auto;
-    }
-
-    ul {
-        display: flex;
-        list-style: none;
-        justify-content: space-between;
-    }
-
-    a {
-        color: rgb(128, 125, 125);
-        padding: 5px;
-        margin: 0 5px;
-
-        &:hover {
-            color: #fff;
-        }
-    }
-
-    .burger {
-        display: none;
-        div {
-            width: 25px;
-            height: 3px;
-            background-color: #000;
-            margin: 5px;
-        }
-    }
-}
-
-@media screen and (max-width: 768px) {
-    body {
-        overflow-x: hidden;
-    }
-
-    nav {
-        ul {
-            position: absolute;
-            right: 0px;
-            height: 50vh;
-            top: 75px;
-            background-color: $header-color;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 50%;
-            transform: translateX(100%);
-            transition: transform 0.5s ease-in;
-            padding: 40px 0;
-
-            li {
-                opacity: 0;
-            }
-        }
-
-        .burger {
-            display: block;
-            padding-right: 30px;
-            cursor: pointer;
-        }
-    }
-}
-
-.nav-active {
-    transform: translateX(0%);
-}
-
-@keyframes navLinkFade {
-    from {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
+@import "navbar";
