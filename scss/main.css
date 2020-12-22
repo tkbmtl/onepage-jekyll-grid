@@ -36,9 +36,25 @@ body p {
   padding: 0 10px;
 }
 
+/* NAVBAR */
+header {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: top 0.3s;
+  transition: top 0.3s;
+  /* Transition effect when sliding down (and up) */
+}
+
 nav {
   background-color: #09192f;
   height: 75px;
+  width: 100%;
 }
 
 nav .container {
@@ -72,7 +88,7 @@ nav ul {
 nav a {
   color: #fff;
   padding: 5px;
-  margin: 0 5px;
+  margin: 0 7px;
 }
 
 nav a:hover {
@@ -110,16 +126,24 @@ nav .burger div {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 50%;
+    width: 100%;
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
     padding: 40px 0;
   }
   nav ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     opacity: 0;
+    width: 100%;
   }
   nav ul li a {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     font-size: 20px;
+    text-align: center;
   }
   nav .burger {
     display: block;
@@ -178,4 +202,14 @@ nav .burger div {
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
   }
+}
+
+/* MAIN */
+main {
+  background-color: #007ec0;
+  color: #fff;
+}
+
+main .container {
+  padding-top: 90px;
 }

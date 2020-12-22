@@ -40,5 +40,16 @@ body {
     padding: 0 10px;
 }
 
-// NAV BAR
+/* NAVBAR */
 @import "navbar";
+
+/* MAIN */
+
+main {
+    background-color: #007ec0;
+    color: #fff;
+
+    .container {
+        padding-top: 90px;
+    }
+}
