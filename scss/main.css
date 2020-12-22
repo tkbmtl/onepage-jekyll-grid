@@ -32,12 +32,13 @@ body p {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+  overflow: auto;
+  padding: 0 10px;
 }
 
 nav {
   background-color: lightblue;
   height: 75px;
-  padding: 0 40px;
 }
 
 nav .container {
@@ -54,7 +55,7 @@ nav .container {
 }
 
 nav .logo {
-  max-width: 200px;
+  max-width: 175px;
   height: auto;
 }
 
@@ -85,7 +86,7 @@ nav .burger {
 nav .burger div {
   width: 25px;
   height: 3px;
-  background-color: #fff;
+  background-color: #000;
   margin: 5px;
 }
 
@@ -93,16 +94,10 @@ nav .burger div {
   body {
     overflow-x: hidden;
   }
-  nav .container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
   nav ul {
     position: absolute;
     right: 0px;
-    height: 90vh;
+    height: 50vh;
     top: 75px;
     background-color: lightblue;
     display: -webkit-box;
@@ -116,12 +111,51 @@ nav .burger div {
         -ms-flex-align: center;
             align-items: center;
     width: 50%;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+    transition: -webkit-transform 0.5s ease-in;
+    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+    padding: 40px 0;
   }
   nav ul li {
-    opacity: 0%;
+    opacity: 0;
+  }
+  nav .burger {
+    display: block;
+    padding-right: 30px;
+    cursor: pointer;
+  }
+}
+
+.nav-active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+@-webkit-keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
   }
 }

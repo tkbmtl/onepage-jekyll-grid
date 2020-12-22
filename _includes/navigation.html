@@ -3,7 +3,7 @@
     <nav>
         <div class="container">
             <a href="#page-top"><img class="logo" src="/assets/images/logo.png" alt="Lift73 Logo" /></a>
-            <ul>
+            <ul class="nav-links">
                 {% assign lg = page.locale%} {% for item in site.data.[lg].navigation%}
                 <li>
                     <a href="{{ item.link }}">{{ item.name }}</a>
