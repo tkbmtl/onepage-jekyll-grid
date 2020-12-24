@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 
 // Variables
 
-$header-color: #09192f;
+$header-color: #fafafa;
 
 /* General STYLING */
 
@@ -14,19 +14,29 @@ $header-color: #09192f;
 
 body {
     font-family: "Lato", sans-serif;
-    color: #000;
+    color: #fafafa;
     line-height: 1.6;
 
     a {
         text-decoration: none;
-        color: #333;
+        color: black;
     }
 
     h1,
-    h2 {
-        font-weight: 600;
+    h2,
+    h3 {
+        font-weight: bold;
         line-height: 1.2;
         margin: 10px 0;
+    }
+    h1 {
+        font-size: 90px;
+    }
+    h2 {
+        font-size: 65px;
+    }
+    h3 {
+        font-size: 40px;
     }
     p {
         margin: 10px, 0;
@@ -40,16 +50,99 @@ body {
     padding: 0 10px;
 }
 
+/* UTLITIES */
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
 /* NAVBAR */
 @import "navbar";
 
 /* MAIN */
 
-main {
-    background-color: #007ec0;
-    color: #fff;
+.main {
+    background-color: #fafafa;
+    color: #000;
 
     .container {
-        padding-top: 90px;
+        padding-top: 100px;
+        padding-bottom: 50px;
+        display: grid;
+        grid-template-columns: minmax(90%, 95%) 1fr;
+    }
+}
+
+/* ABOUT */
+
+.about {
+    background-color: #ea3383;
+    .container {
+        padding: 50px 0;
+        width: 85%;
+    }
+    .about-tag {
+        display: grid;
+        text-align: center;
+    }
+}
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+
+        h1 {
+            font-size: 60px;
+        }
+        h2 {
+            font-size: 42px;
+        }
+        h3 {
+            font-size: 30px;
+        }
+    }
+
+    nav {
+        ul {
+            position: absolute;
+            right: 0px;
+            height: 50vh;
+            top: 75px;
+            background-color: $header-color;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+            transform: translateX(100%);
+            padding: 40px 0;
+
+            li {
+                display: flex;
+                opacity: 0;
+                width: 100%;
+
+                a {
+                    flex: 1;
+                    font-size: 20px;
+                    text-align: center;
+                }
+            }
+        }
+
+        .burger {
+            display: block;
+            padding-right: 30px;
+            cursor: pointer;
+        }
+    }
+    main {
+        .container {
+            padding-top: 80px;
+        }
     }
 }

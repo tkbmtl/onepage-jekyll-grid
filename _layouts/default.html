@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ page.locale }}">
     <head>
+        {% if jekyll.environment == "production" %}
         <!-- Google Tag Manager -->
         <script>
             (function (w, d, s, l, i) {
@@ -15,6 +16,7 @@
             })(window, document, "script", "dataLayer", "GTM-MNRTR8Z");
         </script>
         <!-- End Google Tag Manager -->
+        {% endif %}
 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -30,6 +32,7 @@
     </head>
 
     <body id="page-top">
+        {% if jekyll.environment == "production" %}
         <!-- Google Tag Manager (noscript) -->
         <noscript
             ><iframe
@@ -40,7 +43,7 @@
             ></iframe
         ></noscript>
         <!-- End Google Tag Manager (noscript) -->
-        {% include navigation.html %} {{ content }} {% include footer.html %}
-        <script src="/assets/js/script.js"></script>
+        {% endif %} {% include navigation.html %} {{ content }} {% include footer.html %}
+        <script src="/assets/js/main.js"></script>
     </body>
 </html>

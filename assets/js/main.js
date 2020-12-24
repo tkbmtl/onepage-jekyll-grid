@@ -44,14 +44,17 @@ const navSlide = () => {
     });      
 }
 
+//Hide menu on scroll
 const hideOnScroll = () => {
     let prevScrollpos = window.pageYOffset;
     window.onscroll = () => {
-        let currentScrollPos = window.pageYOffset;
+        let currentScrollPos
+         = window.pageYOffset;
         if (prevScrollpos > currentScrollPos) {
             document.getElementsByTagName("header")[0].style.top = "0";
         } else {
-            document.getElementsByTagName("header")[0].style.top = "-75px";
+            console.log("IN");            
+            document.getElementsByTagName("header")[0].style.top = "-120px";
         }
         prevScrollpos = currentScrollPos;
     };
