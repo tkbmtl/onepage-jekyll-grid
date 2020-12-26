@@ -33,10 +33,10 @@ nav {
         font-weight: bold;
         padding: 5px;
         margin: 0 7px;
+    }
 
-        &:hover {
-            color: lightgray;
-        }
+    li a:hover {
+        border-bottom: 2px solid #000;
     }
 
     .burger {
