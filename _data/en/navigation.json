@@ -4,16 +4,16 @@
         "link": "#about"
     },
     {
-        "name": "Our team",
-        "link": "#team"
-    },
-    {
         "name": "Services",
         "link": "#services"
     },
     {
         "name": "Clients",
         "link": "#clients"
+    },
+    {
+        "name": "Our team",
+        "link": "#team"
     },
     {
         "name": "Contact us",

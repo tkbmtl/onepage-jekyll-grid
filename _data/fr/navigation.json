@@ -4,16 +4,16 @@
         "link": "#about"
     },
     {
-        "name": "Équipe",
-        "link": "#team"
-    },
-    {
         "name": "Services",
         "link": "#services"
     },
     {
         "name": "Clients",
         "link": "#clients"
+    },
+    {
+        "name": "Équipe",
+        "link": "#team"
     },
     {
         "name": "Contact",
