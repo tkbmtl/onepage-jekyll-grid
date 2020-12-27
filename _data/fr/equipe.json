@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Jean-Michel GHoussoub",
+        "title": "Associé directeur",
+        "pic": "jmghoussoub.png",
+        "text1": "Jean-Michel cumule plus de 20 ans d’expérience dans le monde des affaires numériques, notamment dans le domaine du commerce électronique. Au cours de sa carrière, il a conseillé de nombreuses marques locales, nationales et internationales dans des secteurs allant de l’alimentation à l’industrie minière en passant par l’industrie pharmaceutique, les télécommunications et le commerce de détail.",
+        "text2": "Il aide les entreprises à transformer leur utilisation de la technologie, mais aussi à revoir leur modèle d’affaires afin de mieux exploiter les profonds changements apportés par le numérique.",
+        "email": "jm@lift73.com",
+        "linkedin": "https://www.linkedin.com/in/jmghoussoub/"
+    },
+    {
+        "name": "Etienne Brunet",
+        "title": "Associé directeur",
+        "pic": "etiennebrunet.png",
+        "text1": "Étienne œuvre depuis plus de 20 ans dans le monde des affaires et du développement informatique. Ce professionnel chevronné et multidisciplinaire se concentre plus particulièrement sur la stratégie numérique, l’innovation technologique, l’idéation de produits, l’analyse des processus d’affaires et la gestion d’équipes.",
+        "text2": "À la fois passionné par le numérique et entrepreneur inventif, Étienne propose des solutions technologiques créatives, adaptées à des environnements changeants et alignées sur des objectifs d’affaires réalistes.",
+        "email": "etienne@lift73.com",
+        "linkedin": "https://www.linkedin.com/in/etiennebrunet/"
+    }
+
+
+]

@@ -13,113 +13,111 @@ description: Lift 73 offre des services-conseils en transformation numérique qu
     </div>
 </main>
 
-<section class="about">
+<section class="about" id="about">
     <div class="container">
         <div class="about-tag">
             <h3>
-                Lift73 offre des services-conseils en transformation numérique qui aident les entreprises d’ici à tirer
-                profit des possibilités liées au changement par une utilisation intelligente de la technologie.
+                Nous aidons les entreprises d’ici à tirer profit des possibilités liées au changement par une
+                utilisation intelligente de la technologie.
             </h3>
+            <h5>
+                Nous sommes des gens d’action curieux et ouverts d’esprit qui aiment régler des problèmes complexes.
+                Notre équipe se compose de gens d’affaires possédant une riche expérience en technologie, vente, gestion
+                et communications.
+            </h5>
+            <h5>
+                Au cours des 20 dernières années, nous avons bâti un solide réseau de collaborateurs dans une vaste
+                gamme de secteurs d’activité.Nous mettons notre expertise et nos ressources au service de gestionnaires
+                qui souhaitent générer rapidement des résultats concrets.
+            </h5>
         </div>
-        <div class="about-text">
-            <div class="item-img-d">
-                <div class="text">
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad illo est voluptatum repudiandae
-                        repellendus totam at assumenda eligendi incidunt, vitae cum dolorum, earum expedita! Nesciunt
-                        ipsam eveniet excepturi temporibus dolores consequatur numquam, doloremque ipsum, corrupti amet
-                        blanditiis deserunt nostrum laboriosam adipisci officia consequuntur! Delectus, est? Animi
-                        cumque natus amet aliquid expedita nam dolorem perferendis! Ex in temporibus praesentium facilis
-                        perferendis.
-                    </p>
-                </div>
-                <div class="img">
-                    <img src="/assets/images/photo_02.png" alt="" />
-                </div>
+    </div>
+</section>
+
+<section class="services" id="services">
+    <div class="container">
+        <div class="services-text">
+            <div class="services-title">
+                <h2>Services</h2>
             </div>
-            <div class="item-img-g">
-                <div class="img">
-                    <img src="/assets/images/photo_02.png" alt="" />
-                </div>
-                <div class="text">
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad illo est voluptatum repudiandae
-                        repellendus totam at assumenda eligendi incidunt, vitae cum dolorum, earum expedita! Nesciunt
-                        ipsam eveniet excepturi temporibus dolores consequatur numquam, doloremque ipsum, corrupti amet
-                        blanditiis deserunt nostrum laboriosam adipisci officia consequuntur! Delectus, est? Animi
-                        cumque natus amet aliquid expedita nam dolorem perferendis! Ex in temporibus praesentium facilis
-                        perferendis.
-                    </p>
-                </div>
+            <h5>
+                Nous conseillons nos clients sur les meilleures façons d’utiliser la technologie comme avantage
+                concurrentiel. Nous aidons les entreprises à choisir, à configurer et à utiliser efficacement les bons
+                outils technologiques. Cela comprend également la recherche de partenaires technologiques ainsi que le
+                recrutement et la formation de ressources humaines.
+            </h5>
+            <h5 class="text-bold">Notre contribution touche différents aspects de la transformation numérique</h5>
+        </div>
+        <div class="services-blocks">
+            <div class="service-block">
+                <h5>Stratégie d’affaires et technologique</h5>
+            </div>
+            <div class="service-block">
+                <h5>Optimisation du commerce électronique</h5>
+            </div>
+            <div class="service-block">
+                <h5>Audit technologique</h5>
+            </div>
+            <div class="service-block">
+                <h5>Sélection de plateformes technologiques</h5>
+            </div>
+            <div class="service-block">
+                <h5>Évaluation et encadrement d’équipes techniques</h5>
+            </div>
+            <div class="service-block">
+                <h5>Évaluation et sélection de fournisseurs</h5>
+            </div>
+            <div class="service-block">
+                <h5>Coaching de dirigeants</h5>
             </div>
         </div>
     </div>
 </section>
 
-<section>
-    <h2>Équipe</h2>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam
-        possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit
-        dignissimos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, suscipit aspernatur. Possimus
-        doloremque deleniti numquam placeat optio magnam consequatur cum sapiente corporis adipisci iste maxime sunt
-        cumque, debitis soluta iusto quos perspiciatis. Iure, commodi odit in veniam quidem sapiente rerum labore
-        deserunt provident consequatur facere voluptatum! Nobis laudantium ratione similique. Ex cupiditate consectetur
-        accusantium nihil excepturi non debitis iste, sapiente quas architecto quaerat perspiciatis eaque sed natus
-        consequatur labore earum beatae inventore eveniet blanditiis provident? Provident repudiandae, veritatis modi
-        eaque suscipit natus odit ipsa, soluta voluptas laboriosam inventore fugiat tenetur non. Sapiente tempora,
-        temporibus pariatur aperiam nemo minima sunt tenetur!
-    </p>
+<section class="clients" id="clients">
+    <div class="container">
+        <div class="clients-text">
+            <div class="clients-title">
+                <h2>Clients</h2>
+            </div>
+        </div>
+        <div class="clients-blocks">
+            {% assign lg = page.locale %} {% for logo in site.data[lg].logo_clients %}
+            <div class="client-block">
+                <img src="/assets/images/clients/{{ logo.img }}" alt="{{ logo.name }}" />
+            </div>
+            {% endfor %}
+        </div>
+    </div>
 </section>
 
-<section class="services">
-    <h2>Services</h2>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis,
-        id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam. Lorem
-        ipsum dolor sit amet, consectetur adipisicing elit. Minus ad fugit possimus ipsam, unde qui alias, magnam labore
-        quidem consequuntur architecto earum accusantium commodi ullam officiis inventore aliquid recusandae facilis
-        voluptatem expedita nulla! Illum eum alias explicabo, delectus ipsa molestiae eos voluptate ducimus obcaecati
-        consequatur facere officia odio pariatur reiciendis aperiam eaque cumque, quas sit saepe? Vero saepe cum
-        eligendi corrupti repudiandae, nam eaque illum facere praesentium dicta pariatur sunt dolore, atque corporis et
-        earum quod est mollitia doloribus, aliquid natus labore ea? Nobis dolor sint optio doloremque cupiditate eveniet
-        earum reprehenderit dolorem molestiae obcaecati ad pariatur numquam, architecto possimus.
-    </p>
-</section>
-
-<section class="clients">
-    <h2>Clients</h2>
-    <p class="lead">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis,
-        id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam. Lorem
-        ipsum dolor, sit amet consectetur adipisicing elit. Impedit ut culpa consectetur sint voluptatibus illo dicta
-        porro facilis ratione quis, quibusdam fugit repellat eos saepe, atque necessitatibus placeat quam veniam aut,
-        ipsum animi illum. Iste eum explicabo iure officiis! Dicta, ab. Possimus esse eum sequi. Inventore neque tempore
-        dolores, sit ipsa facilis illum quos nobis fuga sapiente earum modi porro fugiat libero autem. Reprehenderit,
-        vel! Eius dolorum eum, magnam sunt eos obcaecati architecto aut velit dolorem! Recusandae enim nemo itaque, quas
-        voluptatum, sint numquam ullam odio asperiores a, illo quod quae impedit sapiente doloremque possimus dolorum
-        pariatur vero! Maxime, aperiam.
-    </p>
-</section>
-
-<section class="contact" id="contact">
-    <h2>Contact</h2>
-    <p class="lead">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi unde molestias nulla magnam totam esse in fuga
-        facilis doloribus modi? Laborum consectetur eaque nostrum totam quidem a obcaecati saepe placeat minus porro id,
-        ex minima laboriosam dolor delectus quo voluptatibus natus corrupti culpa numquam perspiciatis? Itaque sunt vero
-        necessitatibus error natus molestias corporis, aliquid deleniti consequuntur consectetur maiores? Odit
-        repudiandae excepturi eius reiciendis alias eveniet corrupti aspernatur explicabo modi vero, voluptatem amet,
-        tempora voluptate. Sunt ratione est impedit harum eaque pariatur iusto nobis autem enim facere. Ipsam nisi hic
-        deserunt ad voluptate ducimus voluptates non porro, quod nobis at magni. Lorem ipsum dolor sit amet, consectetur
-        adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil
-        beatae magnam et repudiandae ipsa exercitationem, in, quo totam. Lorem, ipsum dolor sit amet consectetur
-        adipisicing elit. Obcaecati dolores, reprehenderit labore nobis quod, ex fugiat neque voluptatum pariatur esse
-        velit maxime expedita sed, voluptas possimus excepturi ea magnam eaque quae eveniet commodi harum? Natus ipsa
-        enim deserunt velit fuga voluptas accusamus id maxime, exercitationem eligendi! Neque tempore eligendi
-        praesentium ab, ipsam fugit est! Quo, architecto molestiae voluptates atque eum fugit consequatur quia cum rem
-        perferendis sed nobis, minus dolores recusandae. Sint voluptatibus ullam totam laborum, ratione mollitia quis,
-        nam itaque, corrupti sed quidem? Nemo obcaecati nisi et voluptatum libero vitae earum fugit perspiciatis
-        molestiae! Officia vel commodi laboriosam expedita?
-    </p>
+<section class="equipe" id="team">
+    <div class="container">
+        <div class="equipe-text">
+            <div class="equipe-title">
+                <h2>Équipe</h2>
+            </div>
+        </div>
+        <div class="equipe-cards">
+            {% assign lg = page.locale %} {% for person in site.data[lg].equipe %}
+            <div class="equipe-card">
+                <img class="photo" src="/assets/images/equipe/{{ person.pic }}" alt="{{ person.name }} picture" />
+                <h5>{{ person.name }}</h5>
+                <h5 class="title">{{ person.title }}</h5>
+                <p>{{ person.text1 }}</p>
+                <p>{{ person.text2 }}</p>
+                <ul class="social flex">
+                    <li>
+                        <a href="mailto:{{ person.email }}"> <img src="/assets/images/email@2x.png" alt="Email" /></a>
+                    </li>
+                    <li>
+                        <a href="{{ person.linkedin }}" target="_blank">
+                            <img src="/assets/images/link@2x.png" alt="LinkedIn"
+                        /></a>
+                    </li>
+                </ul>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
 </section>

@@ -4,7 +4,7 @@
         <div class="container flex">
             <a href="#page-top"><img class="logo" src="/assets/images/Logo_header@2x.png" alt="Lift73 Logo" /></a>
             <ul class="nav-links">
-                {% assign lg = page.locale%} {% for item in site.data.[lg].navigation%}
+                {% assign lg = page.locale%} {% for item in site.data[lg].navigation%}
                 <li>
                     <a href="{{ item.link }}">{{ item.name }}</a>
                 </li>
