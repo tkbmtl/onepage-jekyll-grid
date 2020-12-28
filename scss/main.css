@@ -549,7 +549,7 @@ footer li:nth-child(3) {
         grid-template-columns: 1fr;
   }
   footer .container {
-    background-size: 220px;
+    background-size: 12.5rem;
   }
   footer li:nth-child(3) {
     width: 60%;
