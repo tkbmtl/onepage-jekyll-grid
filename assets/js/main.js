@@ -48,9 +48,10 @@ const navSlide = () => {
 const hideOnScroll = () => {
     let prevScrollpos = window.pageYOffset;
     window.onscroll = () => {
+        console.log(window.pageYOffset);
         let currentScrollPos
          = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
+        if ((prevScrollpos > currentScrollPos) || window.pageYOffset == 0) {
             document.getElementsByTagName("header")[0].style.top = "0";
         } else {          
             document.getElementsByTagName("header")[0].style.top = "-120px";

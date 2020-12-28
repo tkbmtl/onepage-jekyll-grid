@@ -98,7 +98,7 @@ nav .flex {
 }
 
 nav .logo {
-  max-width: 190px;
+  max-width: 11.875rem;
   height: auto;
 }
 
@@ -209,6 +209,7 @@ nav .burger div {
 
 .about .container {
   padding: 3.125rem 0;
+  background: url("/assets/images/Pink_outline_logo.png") 50% no-repeat;
 }
 
 .about .about-tag {
@@ -428,8 +429,8 @@ footer {
 
 footer .container {
   padding-top: 3.125rem;
-  background: #07070707 url("/assets/images/Logo_Footer@2x.png") no-repeat 95% 100%;
-  background-size: 300px;
+  background: #07070707 url("/assets/images/Footer_Logo.png") no-repeat 95% 100%;
+  background-size: 18.75rem;
 }
 
 footer address {
