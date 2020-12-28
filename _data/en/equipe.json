@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Jean-Michel GHoussoub",
+        "title": "Managing Partner",
+        "pic": "jmghoussoub.png",
+        "text1": "Jean-Michel has more than 20 years of experience in the digital business world, particularly in the field of e-commerce. During his career, he has advised numerous local, national and international brands in a wide range of industries including food, mining, pharmaceuticals, telecommunications and retail.",
+        "text2": "He helps companies transform their use of technology and rethink their business model to better exploit the profound changes brought about by digital technology.",
+        "email": "jm@lift73.com",
+        "linkedin": "https://www.linkedin.com/in/jmghoussoub/"
+    },
+    {
+        "name": "Etienne Brunet",
+        "title": "Managing Partner",
+        "pic": "etiennebrunet.png",
+        "text1": "Étienne has been working in business and IT development for more than 20 years. This seasoned and multidisciplinary professional focuses on digital strategy, technological innovation, product ideation, business process analysis and team management.",
+        "text2": "Both passionate about digital technology and an inventive entrepreneur, Étienne devises creative technological solutions adapted to changing environments and aligned with realistic business objectives.",
+        "email": "etienne@lift73.com",
+        "linkedin": "https://www.linkedin.com/in/etiennebrunet/"
+    }
+
+
+]

@@ -52,8 +52,7 @@ const hideOnScroll = () => {
          = window.pageYOffset;
         if (prevScrollpos > currentScrollPos) {
             document.getElementsByTagName("header")[0].style.top = "0";
-        } else {
-            console.log("IN");            
+        } else {          
             document.getElementsByTagName("header")[0].style.top = "-120px";
         }
         prevScrollpos = currentScrollPos;

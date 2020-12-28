@@ -1,0 +1,46 @@
+[
+    {
+        "name": "BDC",
+        "img": "bdc@2x.png"
+    },
+    {
+        "name": "Colabor",
+        "img": "colabor@2x.png"
+    },
+    {
+        "name": "Cool & Simple",
+        "img": "coolsimple@2x.png"
+    },
+    {
+        "name": "La Financière des Professionnels",
+        "img": "fdp@2x.png"
+    },
+    {
+        "name": "Gastronomia",
+        "img": "gastronomia@2x.png"
+    },
+    {
+        "name": "Intega",
+        "img": "intega@2x.png"
+    },
+    {
+        "name": "Medicus",
+        "img": "medicus@2x.png"
+    },
+    {
+        "name": "Jean-Coutu",
+        "img": "pjc@2x.png"
+    },
+    {
+        "name": "Royer",
+        "img": "royer@2x.png"
+    },
+    {
+        "name": "Sogetel",
+        "img": "sogetel@2x.png"
+    },
+    {
+        "name": "Telus Santé",
+        "img": "telus@2x.png"
+    }
+]

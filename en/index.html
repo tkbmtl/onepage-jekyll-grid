@@ -5,93 +5,117 @@ locale: en
 description: Lift 73 offers digital transformation consulting services that help local businesses capitalize on the opportunities presented by change through the intelligent use of technology.
 ---
 
-<main>
+<main class="main">
     <div class="container">
-        <h1>Serb</h1>
-        <p>A landing page template freshly redesigned for Bootstrap 4</p>
+        <div class="main-text">
+            <h1>Digital transformation consulting services</h1>
+        </div>
     </div>
 </main>
 
-<section class="about">
+<section class="about" id="about">
     <div class="container">
-        <h2>À propos</h2>
-        <p>
-            This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it
-            as a boilerplate or starting point for you own landing page designs! This template features:
-        </p>
-        <ul>
-            <li>Clickable nav links that smooth scroll to page sections</li>
-            <li>Responsive behavior when clicking nav links perfect for a one page website</li>
-            <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
-            <li>Minimal custom CSS so you are free to explore your own unique design options</li>
-        </ul>
+        <div class="about-tag">
+            <h3>
+                We help local businesses capitalize on the opportunities presented by change through the intelligent use
+                of technology.
+            </h3>
+            <h5>
+                We are curious, open-minded and action-oriented people who enjoy solving complex problems. Our team is
+                composed of business people with a wealth of experience in technology, sales, management and
+                communications.
+            </h5>
+            <h5>
+                Over the past 20 years, we have built a solid network of partners in a wide range of industries. We use
+                our expertise and resources to assist managers who want to quickly generate tangible results.
+            </h5>
+        </div>
     </div>
 </section>
 
-<section class="team">
-    <h2>Équipe</h2>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam
-        possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit
-        dignissimos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, suscipit aspernatur. Possimus
-        doloremque deleniti numquam placeat optio magnam consequatur cum sapiente corporis adipisci iste maxime sunt
-        cumque, debitis soluta iusto quos perspiciatis. Iure, commodi odit in veniam quidem sapiente rerum labore
-        deserunt provident consequatur facere voluptatum! Nobis laudantium ratione similique. Ex cupiditate consectetur
-        accusantium nihil excepturi non debitis iste, sapiente quas architecto quaerat perspiciatis eaque sed natus
-        consequatur labore earum beatae inventore eveniet blanditiis provident? Provident repudiandae, veritatis modi
-        eaque suscipit natus odit ipsa, soluta voluptas laboriosam inventore fugiat tenetur non. Sapiente tempora,
-        temporibus pariatur aperiam nemo minima sunt tenetur!
-    </p>
+<section class="services" id="services">
+    <div class="container">
+        <div class="services-text">
+            <div class="services-title">
+                <h2>Services</h2>
+            </div>
+            <h5>
+                We advise our clients on the best ways to use technology as a competitive advantage. We help businesses
+                select, configure and effectively use the right technological tools. This also includes finding
+                technology partners and recruiting and training human resources.
+            </h5>
+            <h5 class="text-bold">Our contribution addresses different aspects of the digital transformation:</h5>
+        </div>
+        <div class="services-blocks">
+            <div class="service-block">
+                <h5>Business and technology strategy</h5>
+            </div>
+            <div class="service-block">
+                <h5>E-commerce optimization</h5>
+            </div>
+            <div class="service-block">
+                <h5>Technology audit</h5>
+            </div>
+            <div class="service-block">
+                <h5>Technology platform selection</h5>
+            </div>
+            <div class="service-block">
+                <h5>Technical team evaluation and training</h5>
+            </div>
+            <div class="service-block">
+                <h5>Supplier evaluation and selection</h5>
+            </div>
+            <div class="service-block">
+                <h5>Executive coaching</h5>
+            </div>
+        </div>
+    </div>
 </section>
 
-<section class="services">
-    <h2>Services</h2>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis,
-        id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam. Lorem
-        ipsum dolor sit amet, consectetur adipisicing elit. Minus ad fugit possimus ipsam, unde qui alias, magnam labore
-        quidem consequuntur architecto earum accusantium commodi ullam officiis inventore aliquid recusandae facilis
-        voluptatem expedita nulla! Illum eum alias explicabo, delectus ipsa molestiae eos voluptate ducimus obcaecati
-        consequatur facere officia odio pariatur reiciendis aperiam eaque cumque, quas sit saepe? Vero saepe cum
-        eligendi corrupti repudiandae, nam eaque illum facere praesentium dicta pariatur sunt dolore, atque corporis et
-        earum quod est mollitia doloribus, aliquid natus labore ea? Nobis dolor sint optio doloremque cupiditate eveniet
-        earum reprehenderit dolorem molestiae obcaecati ad pariatur numquam, architecto possimus.
-    </p>
+<section class="clients" id="clients">
+    <div class="container">
+        <div class="clients-text">
+            <div class="clients-title">
+                <h2>Clients</h2>
+            </div>
+        </div>
+        <div class="clients-blocks">
+            {% assign lg = page.locale %} {% for logo in site.data[lg].logo_clients %}
+            <div class="client-block">
+                <img src="/assets/images/clients/{{ logo.img }}" alt="{{ logo.name }}" />
+            </div>
+            {% endfor %}
+        </div>
+    </div>
 </section>
 
-<section class="clients">
-    <h2>Clients</h2>
-    <p class="lead">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis,
-        id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam. Lorem
-        ipsum dolor, sit amet consectetur adipisicing elit. Impedit ut culpa consectetur sint voluptatibus illo dicta
-        porro facilis ratione quis, quibusdam fugit repellat eos saepe, atque necessitatibus placeat quam veniam aut,
-        ipsum animi illum. Iste eum explicabo iure officiis! Dicta, ab. Possimus esse eum sequi. Inventore neque tempore
-        dolores, sit ipsa facilis illum quos nobis fuga sapiente earum modi porro fugiat libero autem. Reprehenderit,
-        vel! Eius dolorum eum, magnam sunt eos obcaecati architecto aut velit dolorem! Recusandae enim nemo itaque, quas
-        voluptatum, sint numquam ullam odio asperiores a, illo quod quae impedit sapiente doloremque possimus dolorum
-        pariatur vero! Maxime, aperiam.
-    </p>
-</section>
-
-<section class="contact" id="contact">
-    <h2>Contact</h2>
-    <p class="lead">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi unde molestias nulla magnam totam esse in fuga
-        facilis doloribus modi? Laborum consectetur eaque nostrum totam quidem a obcaecati saepe placeat minus porro id,
-        ex minima laboriosam dolor delectus quo voluptatibus natus corrupti culpa numquam perspiciatis? Itaque sunt vero
-        necessitatibus error natus molestias corporis, aliquid deleniti consequuntur consectetur maiores? Odit
-        repudiandae excepturi eius reiciendis alias eveniet corrupti aspernatur explicabo modi vero, voluptatem amet,
-        tempora voluptate. Sunt ratione est impedit harum eaque pariatur iusto nobis autem enim facere. Ipsam nisi hic
-        deserunt ad voluptate ducimus voluptates non porro, quod nobis at magni. Lorem ipsum dolor sit amet, consectetur
-        adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil
-        beatae magnam et repudiandae ipsa exercitationem, in, quo totam. Lorem, ipsum dolor sit amet consectetur
-        adipisicing elit. Obcaecati dolores, reprehenderit labore nobis quod, ex fugiat neque voluptatum pariatur esse
-        velit maxime expedita sed, voluptas possimus excepturi ea magnam eaque quae eveniet commodi harum? Natus ipsa
-        enim deserunt velit fuga voluptas accusamus id maxime, exercitationem eligendi! Neque tempore eligendi
-        praesentium ab, ipsam fugit est! Quo, architecto molestiae voluptates atque eum fugit consequatur quia cum rem
-        perferendis sed nobis, minus dolores recusandae. Sint voluptatibus ullam totam laborum, ratione mollitia quis,
-        nam itaque, corrupti sed quidem? Nemo obcaecati nisi et voluptatum libero vitae earum fugit perspiciatis
-        molestiae! Officia vel commodi laboriosam expedita?
-    </p>
+<section class="equipe" id="team">
+    <div class="container">
+        <div class="equipe-text">
+            <div class="equipe-title">
+                <h2>Équipe</h2>
+            </div>
+        </div>
+        <div class="equipe-cards">
+            {% assign lg = page.locale %} {% for person in site.data[lg].equipe %}
+            <div class="equipe-card">
+                <img class="photo" src="/assets/images/equipe/{{ person.pic }}" alt="{{ person.name }} picture" />
+                <h5>{{ person.name }}</h5>
+                <h5 class="title">{{ person.title }}</h5>
+                <p>{{ person.text1 }}</p>
+                <p>{{ person.text2 }}</p>
+                <ul class="social flex">
+                    <li>
+                        <a href="mailto:{{ person.email }}"> <img src="/assets/images/email@2x.png" alt="Email" /></a>
+                    </li>
+                    <li>
+                        <a href="{{ person.linkedin }}" target="_blank">
+                            <img src="/assets/images/link@2x.png" alt="LinkedIn"
+                        /></a>
+                    </li>
+                </ul>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
 </section>
