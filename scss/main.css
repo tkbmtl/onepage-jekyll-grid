@@ -19,7 +19,8 @@ body a {
 
 body h1,
 body h2,
-body h3 {
+body h3,
+body h4 {
   font-weight: bold;
   line-height: 1.2;
   margin: 0.625rem 0;
@@ -35,6 +36,10 @@ body h2 {
 
 body h3 {
   font-size: 2.25rem;
+}
+
+body h4 {
+  font-size: 2.15rem;
 }
 
 body h5 {
@@ -216,7 +221,7 @@ nav .burger div {
       grid-template-columns: 85%;
 }
 
-.about .about-tag h3,
+.about .about-tag h4,
 .about .about-tag h5 {
   text-align: center;
 }
@@ -459,10 +464,13 @@ footer li:nth-child(3) {
     font-size: 3.438rem;
   }
   body h2 {
-    font-size: 2.625rem;
+    font-size: 2.835rem;
   }
   body h3 {
     font-size: 1.75;
+  }
+  body h4 {
+    font-size: 1.65;
   }
   body h5 {
     font-size: 1rem;
