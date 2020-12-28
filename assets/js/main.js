@@ -49,22 +49,20 @@ const navSlide = () => {
 
 var doc = document.documentElement;
 var w   = window;
-var b = document.body;
+
 
 var curScroll;
-var prevScroll = w.scrollY || doc.scrollTop || b.scrollTop;
+var prevScroll = w.scrollY || doc.scrollTop;
 var curDirection = 0;
 var prevDirection = 0;
 
-console.log(w.scrollY + " " + doc.scrollTop + " " + b.scrollTop)
 
 var header = document.getElementsByTagName('header');
 var toggled;
 var threshold = 50;
 
 var checkScroll = function() {
-    curScroll = w.scrollY || doc.scrollTop || b.scrollTop;
-    console.log(w.scrollY + " " + doc.scrollTop + " " + b.scrollTop)
+    curScroll = w.scrollY || doc.scrollTop;
     if(curScroll > prevScroll) {
         // scrolled down
         curDirection = 2;
