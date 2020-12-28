@@ -1,6 +1,3 @@
-
-(function(){
-
 const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
@@ -47,7 +44,7 @@ const navSlide = () => {
     });      
 }
 
-/* //Hide menu on scroll
+//Hide menu on scroll
 const hideOnScroll = () => {
     let prevScrollpos = window.pageYOffset;
     window.onscroll = () => {
@@ -61,66 +58,12 @@ const hideOnScroll = () => {
         }
         prevScrollpos = currentScrollPos;
     };
-}; */
-
-var doc = document.documentElement;
-var w   = window;
-
-var curScroll;
-var prevScroll = w.scrollY || doc.scrollTop;
-var curDirection = 0;
-var prevDirection = 0;
-
-
-var header = document.getElementsByTagName('header');
-var toggled;
-var threshold = 50;
-
-var checkScroll = function() {
-    curScroll = w.scrollY || doc.scrollTop;
-    if(curScroll > prevScroll) {
-        // scrolled down
-        curDirection = 2;
-    }
-    else {
-        //scrolled up
-        curDirection = 1;
-    }
-
-    if(curDirection !== prevDirection) {
-        toggled = toggleHeader();
-    }
-
-    prevScroll = curScroll;
-    if(toggled) {
-        prevDirection = curDirection;
-    }
 };
-
-var toggleHeader = function() { 
-    toggled = true;
-    if(curDirection === 2 && curScroll > threshold) {
-        //header.classList.add('hide');
-        document.getElementsByTagName("header")[0].style.top = "-120px";
-    }
-    else if (curDirection === 1) {
-        //header.classList.remove('hide');
-        document.getElementsByTagName("header")[0].style.top = "0px";
-    }
-    else {
-        toggled = false;
-    }
-    return toggled;
-};
-
 
 
 const app = () => {
-    window.addEventListener('scroll', checkScroll);
-    //hideOnScroll();
+    hideOnScroll();
     navSlide();
 }
 
 app();
-
-})();
