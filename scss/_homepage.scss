@@ -1,0 +1,187 @@
+/* MAIN ******************************************************* */
+
+.main {
+    background-color: $header-white;
+    color: #000;
+
+    .container {
+        padding-top: 6.25rem;
+        padding-bottom: 3.125rem;
+        display: grid;
+        grid-template-columns: minmax(90%, 95%) 1fr;
+    }
+}
+
+/* ABOUT ******************************************************* */
+
+.about {
+    background-color: $lift73-pink;
+
+    .container {
+        padding: 3.125rem 0;
+    }
+    .about-tag {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 85%;
+
+        h3,
+        h5 {
+            text-align: center;
+        }
+        h5 {
+            font-weight: normal;
+            width: 80%;
+            margin: 0 auto;
+
+            padding: 0.625rem;
+        }
+    }
+}
+
+/* SERVICES ******************************************************* */
+
+.services {
+    background-color: $lift73-violet;
+
+    .container {
+        padding: 50px 0;
+    }
+    .services-text {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 100%;
+
+        h2,
+        h5,
+        p {
+            text-align: center;
+        }
+        h5 {
+            width: 80%;
+            margin: 0 auto;
+            font-weight: normal;
+            padding: 10px;
+        }
+        .text-bold {
+            width: 40%;
+            margin: 0 auto;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 0.625rem;
+        }
+    }
+
+    .services-blocks {
+        padding: 1.875rem 0;
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: repeat(auto-fill, 280px);
+        justify-content: center;
+        align-items: center;
+
+        h5 {
+            border: 0.063rem #e262fc solid;
+            padding: 1.25rem;
+            text-align: center;
+            height: 6.25rem;
+        }
+    }
+}
+
+/* CLIENTS ******************************************************* */
+
+.clients {
+    background-color: $lift73-blue-violet;
+
+    .container {
+        padding: 3.125rem 0;
+    }
+    .clients-text {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 100%;
+
+        h2 {
+            text-align: center;
+        }
+    }
+
+    .clients-blocks {
+        padding: 1.875rem 0;
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 180px));
+        justify-content: center;
+        align-items: center;
+
+        img {
+            //border: 1px #e262fc solid;
+            padding: 1.25rem;
+            max-width: 100%;
+        }
+    }
+}
+/* Equipe ******************************************************* */
+
+.equipe {
+    background-color: $lift73-blue;
+
+    .container {
+        padding: 3.125rem 0.938rem;
+    }
+    .equipe-text {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 100%;
+
+        h2 {
+            text-align: left;
+        }
+    }
+
+    .equipe-cards {
+        padding: 1.875rem 0;
+        height: auto;
+        display: grid;
+        grid-gap: 3rem;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+
+        .photo {
+            margin-bottom: 1.25rem;
+        }
+
+        h5 {
+            line-height: 1.2;
+        }
+
+        h5.title {
+            font-weight: normal;
+            margin-bottom: 1.25rem;
+        }
+
+        p {
+            padding-bottom: 1.25rem;
+        }
+
+        .equipe-card {
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            justify-content: space-between;
+            img {
+                width: 250px;
+            }
+        }
+        .social {
+            list-style: none;
+            justify-content: left;
+
+            img {
+                width: 1.563rem;
+                margin-right: 0.938rem;
+            }
+        }
+    }
+}

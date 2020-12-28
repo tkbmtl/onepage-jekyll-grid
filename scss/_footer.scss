@@ -1,0 +1,32 @@
+footer {
+    background-color: $lift73-black;
+
+    .container {
+        padding-top: 3.125rem;
+        background: #07070707 url("/assets/images/Logo_Footer@2x.png") no-repeat 95% 100%;
+        background-size: 300px;
+    }
+
+    address {
+        padding: 1.25rem 0 6.25rem 1.875rem;
+    }
+
+    a {
+        color: #fff;
+        font-weight: bold;
+        font-size: 1rem;
+        text-decoration: none;
+        font-style: normal;
+    }
+
+    li {
+        list-style: none;
+
+        &:nth-child(2) {
+            padding-bottom: 1.25rem;
+        }
+        &:nth-child(3) {
+            width: 60%;
+        }
+    }
+}

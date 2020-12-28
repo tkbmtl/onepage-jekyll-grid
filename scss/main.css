@@ -1,6 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
-/* Variables ******************************************************* */
-/* General STYLING and Utilities ******************************************************* */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -24,34 +22,34 @@ body h2,
 body h3 {
   font-weight: bold;
   line-height: 1.2;
-  margin: 10px 0;
+  margin: 0.625rem 0;
 }
 
 body h1 {
-  font-size: 85px;
+  font-size: 5.3125rem;
 }
 
 body h2 {
-  font-size: 65px;
+  font-size: 4.063rem;
 }
 
 body h3 {
-  font-size: 36px;
+  font-size: 2.25rem;
 }
 
 body h5 {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 body p {
-  margin: 10px, 0;
+  margin: 0.625rem, 0;
 }
 
 .container {
   max-width: 1140px;
   margin: 0 auto;
   overflow: auto;
-  padding: 0 15px;
+  padding: 0 0.938rem;
 }
 
 /* UTLITIES */
@@ -68,7 +66,6 @@ body p {
   height: 100%;
 }
 
-/* NAVBAR ******************************************************* */
 header {
   position: fixed;
   display: -webkit-box;
@@ -85,7 +82,7 @@ header {
 
 nav {
   background-color: #fafafa;
-  padding-top: 20px;
+  padding-top: 1.25rem;
   width: 100%;
 }
 
@@ -112,14 +109,14 @@ nav ul {
 
 nav a {
   color: #000;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: bold;
-  padding: 5px;
-  margin: 0 7px;
+  padding: 0.313rem;
+  margin: 0 0.438rem;
 }
 
 nav li a:hover {
-  border-bottom: 2px solid #000;
+  border-bottom: 0.125rem solid #000;
 }
 
 nav .burger {
@@ -127,10 +124,10 @@ nav .burger {
 }
 
 nav .burger div {
-  width: 25px;
-  height: 2px;
+  width: 1.563rem;
+  height: 0.125rem;
   background-color: #000;
-  margin: 6px;
+  margin: 0.375rem;
 }
 
 .nav-active {
@@ -155,33 +152,33 @@ nav .burger div {
 }
 
 .toggle .line3 {
-  -webkit-transform: rotate(45deg) translate(-5px, -6px);
-          transform: rotate(45deg) translate(-5px, -6px);
+  -webkit-transform: rotate(45deg) translate(-0.313rem, -0.375rem);
+          transform: rotate(45deg) translate(-0.313rem, -0.375rem);
 }
 
 @-webkit-keyframes navLinkFade {
   from {
     opacity: 0;
-    -webkit-transform: translateX(50px);
-            transform: translateX(50px);
+    -webkit-transform: translateX(3.125rem);
+            transform: translateX(3.125rem);
   }
   to {
     opacity: 1;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    -webkit-transform: translateX(0rem);
+            transform: translateX(0rem);
   }
 }
 
 @keyframes navLinkFade {
   from {
     opacity: 0;
-    -webkit-transform: translateX(50px);
-            transform: translateX(50px);
+    -webkit-transform: translateX(3.125rem);
+            transform: translateX(3.125rem);
   }
   to {
     opacity: 1;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    -webkit-transform: translateX(0rem);
+            transform: translateX(0rem);
   }
 }
 
@@ -192,8 +189,8 @@ nav .burger div {
 }
 
 .main .container {
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding-top: 6.25rem;
+  padding-bottom: 3.125rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: minmax(90%, 95%) 1fr;
@@ -206,7 +203,7 @@ nav .burger div {
 }
 
 .about .container {
-  padding: 50px 0;
+  padding: 3.125rem 0;
 }
 
 .about .about-tag {
@@ -228,7 +225,7 @@ nav .burger div {
   font-weight: normal;
   width: 80%;
   margin: 0 auto;
-  padding: 10px;
+  padding: 0.625rem;
 }
 
 /* SERVICES ******************************************************* */
@@ -268,11 +265,11 @@ nav .burger div {
   margin: 0 auto;
   font-size: 18px;
   font-weight: bold;
-  padding: 10px;
+  padding: 0.625rem;
 }
 
 .services .services-blocks {
-  padding: 30px 0;
+  padding: 1.875rem 0;
   display: -ms-grid;
   display: grid;
   grid-gap: 1rem;
@@ -287,10 +284,10 @@ nav .burger div {
 }
 
 .services .services-blocks h5 {
-  border: 1px #e262fc solid;
-  padding: 20px;
+  border: 0.063rem #e262fc solid;
+  padding: 1.25rem;
   text-align: center;
-  height: 100px;
+  height: 6.25rem;
 }
 
 /* CLIENTS ******************************************************* */
@@ -299,7 +296,7 @@ nav .burger div {
 }
 
 .clients .container {
-  padding: 50px 0;
+  padding: 3.125rem 0;
 }
 
 .clients .clients-text {
@@ -317,7 +314,7 @@ nav .burger div {
 }
 
 .clients .clients-blocks {
-  padding: 30px 0;
+  padding: 1.875rem 0;
   display: -ms-grid;
   display: grid;
   grid-gap: 1rem;
@@ -332,7 +329,7 @@ nav .burger div {
 }
 
 .clients .clients-blocks img {
-  padding: 20px;
+  padding: 1.25rem;
   max-width: 100%;
 }
 
@@ -342,7 +339,7 @@ nav .burger div {
 }
 
 .equipe .container {
-  padding: 50px 15px;
+  padding: 3.125rem 0.938rem;
 }
 
 .equipe .equipe-text {
@@ -360,7 +357,7 @@ nav .burger div {
 }
 
 .equipe .equipe-cards {
-  padding: 30px 0;
+  padding: 1.875rem 0;
   height: auto;
   display: -ms-grid;
   display: grid;
@@ -373,7 +370,7 @@ nav .burger div {
 }
 
 .equipe .equipe-cards .photo {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .equipe .equipe-cards h5 {
@@ -382,11 +379,11 @@ nav .burger div {
 
 .equipe .equipe-cards h5.title {
   font-weight: normal;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .equipe .equipe-cards p {
-  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
 }
 
 .equipe .equipe-cards .equipe-card {
@@ -415,29 +412,28 @@ nav .burger div {
 }
 
 .equipe .equipe-cards .social img {
-  width: 25px;
-  margin-right: 15px;
+  width: 1.563rem;
+  margin-right: 0.938rem;
 }
 
-/* FOOTER ******************************************************* */
 footer {
   background-color: #070707;
 }
 
 footer .container {
-  padding-top: 50px;
+  padding-top: 3.125rem;
   background: #07070707 url("/assets/images/Logo_Footer@2x.png") no-repeat 95% 100%;
   background-size: 300px;
 }
 
 footer address {
-  padding: 20px 0 70px 30px;
+  padding: 1.25rem 0 6.25rem 1.875rem;
 }
 
 footer a {
   color: #fff;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1rem;
   text-decoration: none;
   font-style: normal;
 }
@@ -447,29 +443,28 @@ footer li {
 }
 
 footer li:nth-child(2) {
-  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
 }
 
 footer li:nth-child(3) {
   width: 60%;
 }
 
-/* MEDIA QUERY ******************************************************* */
 @media (max-width: 768px) {
   body {
     overflow-x: hidden;
   }
   body h1 {
-    font-size: 55px;
+    font-size: 3.438rem;
   }
   body h2 {
-    font-size: 42px;
+    font-size: 2.625rem;
   }
   body h3 {
-    font-size: 28px;
+    font-size: 1.75;
   }
   body h5 {
-    font-size: 16px;
+    font-size: 1rem;
   }
   .about .about-text .item-img-d,
   .about .about-text .item-img-g {
@@ -482,7 +477,7 @@ footer li:nth-child(3) {
     position: absolute;
     right: 0px;
     height: 80vh;
-    top: 75px;
+    top: 4.688rem;
     background-color: #070707;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -497,7 +492,7 @@ footer li:nth-child(3) {
     width: 50%;
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
-    padding: 40px 0;
+    padding: 2.5rem 0;
   }
   nav ul li {
     display: -webkit-box;
@@ -510,10 +505,10 @@ footer li:nth-child(3) {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    font-size: 20px;
+    font-size: 1.25rem;
     text-align: center;
     color: #fff;
-    font-size: 28px;
+    font-size: 1.75rem;
   }
   nav ul li a:hover {
     border-bottom: none;
@@ -537,7 +532,7 @@ footer li:nth-child(3) {
     cursor: pointer;
   }
   main .container {
-    padding-top: 80px;
+    padding-top: 1.875rem;
   }
   .equipe .equipe-cards {
     -ms-grid-columns: 1fr;

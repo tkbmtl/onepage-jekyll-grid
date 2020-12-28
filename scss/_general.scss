@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    color: #fff;
+    line-height: 1.6;
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-weight: bold;
+        line-height: 1.2;
+        margin: 0.625rem 0;
+    }
+    h1 {
+        font-size: 5.3125rem;
+    }
+    h2 {
+        font-size: 4.063rem;
+    }
+    h3 {
+        font-size: 2.25rem;
+    }
+    h5 {
+        font-size: 1.125rem;
+    }
+
+    p {
+        margin: 0.625rem, 0;
+    }
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 0.938rem;
+}
+
+/* UTLITIES */
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
