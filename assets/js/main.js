@@ -54,7 +54,7 @@
     let curDirection = 0;
     let prevDirection = 0;
 
-    const header = document.getElementsByTagName("header");
+    const header = document.querySelector("header");
     let toggled;
     const threshold = 30;
 
@@ -82,10 +82,12 @@
         toggled = true;
         if (curDirection === 2 && curScroll > threshold) {
             //header.classList.add('hide');
-            document.getElementsByTagName("header")[0].style.top = "-120px";
+            //document.getElementsByTagName("header")[0].style.top = "-120px";
+            document.querySelector("header").style.top = "-120px";
         } else if (curDirection === 1) {
             //header.classList.remove('hide');
-            document.getElementsByTagName("header")[0].style.top = "0px";
+            //document.getElementsByTagName("header")[0].style.top = "0px";
+            document.querySelector("header").style.top = "0px";
         } else {
             toggled = false;
         }
