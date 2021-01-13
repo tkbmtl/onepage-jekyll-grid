@@ -4,13 +4,13 @@
         <div class="title"><h2>Contact</h2></div>
         <address>
             <ul>
-                <li><a href="tel:+15142283716" class="phone_number">514-228-3716</a></li>
-                <li><a href="mailto:hello@lift73.com">hello@lift73.com</a></li>
+                {% assign lg = page.locale %} {% for contact in site.data[lg].contact %}
+                <li><a href="tel:{{ contact.tel_link }}" class="phone_number">{{ contact.tel }}</a></li>
+                <li><a href="mailto:{{ contact.email }}">{{ contact.email }}</a></li>
                 <li>
-                    <a href="https://goo.gl/maps/HFzAESzSZgCM1ZQ86" target="_blank"
-                        >625, boul. de la Côte-Vertu, Montreal (Québec) H4L 1Y1</a
-                    >
+                    <a href="{{ contact.address_link }}" target="_blank">{{ contact.address }}</a>
                 </li>
+                {% endfor %}
             </ul>
         </address>
     </div>
