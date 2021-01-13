@@ -430,7 +430,7 @@ footer {
 footer .container {
   padding-top: 3.125rem;
   background: #07070707 url("/assets/images/Footer_Logo.png") no-repeat 95% 100%;
-  background-size: 18.75rem;
+  background-size: 17rem;
 }
 
 footer address {
@@ -549,7 +549,7 @@ footer li:nth-child(3) {
         grid-template-columns: 1fr;
   }
   footer .container {
-    background-size: 11.7rem;
+    background-size: 11rem;
   }
   footer li:nth-child(3) {
     width: 60%;
