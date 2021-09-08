@@ -1,11 +1,43 @@
 [
     {
-        "name": "BDC",
-        "img": "bdc@2x.png"
+        "name": "CDPQ",
+        "img": "CDPQ.png"
+    },
+    {
+        "name": "Harnois Énergies",
+        "img": "Harnois.png"
+    },
+    {
+        "name": "Groupement des chefs d'entreprise",
+        "img": "Groupement_chef.png"
+    },
+    {
+        "name": "Royer",
+        "img": "royer@2x.png"
+    },
+    {
+        "name": "Mongeau Pellerin",
+        "img": "Mongeau.png"
+    },
+    {
+        "name": "Cole + Parker",
+        "img": "Cole_parker.png"
+    },
+    {
+        "name": "L'Aviron Chasse et pêche",
+        "img": "Laviron.png"
+    },
+    {
+        "name": "Bayard Jeunesse Canada",
+        "img": "bayard.png"
     },
     {
         "name": "Videotron",
         "img": "Videotron.png"
+    },
+    {
+        "name": "BDC",
+        "img": "bdc@2x.png"
     },
     {
         "name": "Colabor",
@@ -34,10 +66,6 @@
     {
         "name": "Jean-Coutu",
         "img": "pjc@2x.png"
-    },
-    {
-        "name": "Royer",
-        "img": "royer@2x.png"
     },
     {
         "name": "Sogetel",
