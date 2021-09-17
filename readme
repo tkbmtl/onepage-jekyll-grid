@@ -1,4 +1,4 @@
-gem install bundler jekyll
+ 
 
   jekyll new my-awesome-site
 
